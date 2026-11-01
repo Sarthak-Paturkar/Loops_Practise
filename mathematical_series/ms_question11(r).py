@@ -2,7 +2,7 @@
 
 ##x − x²/2! + x³/3! − x⁴/4! + ...
 
-n = int(input("Enter any number (n): "))
+'''n = int(input("Enter any number (n): "))
 x = int(input("Enter x: "))
 
 total = 0
@@ -18,6 +18,24 @@ for i in range(1, n + 1):
 
     print(term, end="")
 
+    
+
+    total += term
+
+print()
+print("Sum:", total)'''
+
+
+n = int(input("Enter any number (n): "))
+x = int(input("Enter x: "))
+
+total = 0
+fact = 1
+
+for i in range(1, n + 1):
+    fact = fact * i
+
+    term =  ((-x) ** i) / -(fact)
     
 
     total += term
